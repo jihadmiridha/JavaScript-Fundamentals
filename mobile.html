@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style type="text/css">
+    div{
+        height: 200px;
+        line-height: 200px;
+        color: white;
+        text-align: center;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    </style>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div onclick="changeColor(this)" style="background-color:red;">
+    Fuck me to change my mood</div>
+
+
+    <script>
+     function changeColor(element){
+        var currentColor = element.style.backgroundColor;
+        if(currentColor == "red"){
+            element.style.backgroundColor ="black";}
+            else {
+                element.style.backgroundColor = "red"
+            } 
+        }
+     
+
+    </script>
+</body>
+</html>

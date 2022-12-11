@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="14.js">
+</head>
+<body>
+    <!-- <script src="14.js"></script> -->
+    <!-- <script src="string ex.js"></script> -->
+     <h2>Fixing Capitalization</h2>
+     <div class="output">
+
+      <ul>
+
+      </ul>  
+     </div>
+
+
+
+    <script>
+        const list = document.querySelector('.output ul');
+list.innerHTML ='';
+let cities = ['dhAka', 'khULna','jeSSore','gOA'];
+
+for(let i=0;i<cities.length;i++){
+    let firstAlphabet = cities[i].slice(0,1);
+    let lowerCaseCity = cities[i].toLowerCase();
+    lowerCaseCity = lowerCaseCity.replace(firstAlphabet,firstAlphabet.toUpperCase());
+     let listItem =document.createElement('li');
+     listItem.textContent = lowerCaseCity;
+     list.appendChild(listItem);
+}
+    </script>
+</body>
+</html>
